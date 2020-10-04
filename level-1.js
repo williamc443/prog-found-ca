@@ -1,95 +1,103 @@
 // Question 1
+var dogFace = "bulldog";
 
-var name;
-{
-  ("willam");
-}
+console.log(dogFace);
 
 // Question 2
-
 var person = {
-  skill: "javascript"
-};
+    name: "William",
+    age: 34,
+  };
 
 // Question 3
 
 var outOfStock = false;
-if (outOfStock === false) {
-  console.log("In stock");
-} else {
-  console.log("Out of stock");
+
+if(outOfStock === true) {
+    console.log("Out of stock");
+}
+else {
+    console.log("In stock");
 }
 
 // Question 4
 
-var ages = [10, 20, 30, 40];
+var numberArrey = [5, 8, 9, 11, 20];
 
-for(var i = 0; i < ages.length; i++) {
-  console.log(ages[i]);
+for (var i = 0; i < numberArrey.length; i++) {
+    console.log(numberArrey[i])
+  }
 
 // Question 5
 
-for (var count = 15; count <= 25; count++) {
+for(var count = 15; count <= 25; count++) {
   console.log(count);
+}
+// or this
+
+for (var i = 15; i <= 25; i++) {
+  console.log(i)
 }
 
 // Question 6
 
-for (var count = 15; count <= 25; count++) {
-  console.log((count = 20));
+for(var count = 15; count <= 25; count++) {
+  if(count === 20) {
+    console.log(count);
 }
+}
+// or this
 
+for (var i = 15; i <= 25; i++) {
+  if(i === 20) {
+    console.log(i);
+}
+}
 // Question 7
 
-var animals = [
-  // first animal
+
+var member = [
   {
-    name: "lion",
-    feet: 4,
-    fatal: true
+    name: "Benji", 
+    age: 3,
+    VIP: true
   },
-  // second animal
   {
-    name: "monkey",
-    feet: 2,
-    fatal: false
+    name: "Emanuel", 
+    age: 0,
+    VIP: true
   }
 ];
 
-var animals = animals.length;
-console.log(animals);
-
-for (var i = 0; i < animals; i++) {
-  console.log(animals[i]);
+for(var i = 0; i < member.length; i++) {
+  console.log(member[i].age);
+  console.log(member[i].VIP);
 }
 
 // Question 8
 
-function  whatIDontLike(theWord) {
-  console.log("I don't like " + theWord);
+function whatIDontLike(noun){
+console.log("I don't like " + noun);
 }
 
-whatIDontLike("fish balls");
+whatIDontLike("cold");
 
 // Question 9
 
-function AddTwoNumbers(number1, number2) {
-  var sum = number1 - number2;
+function basketOfBals(basket1, basket2) {
+  var sum = basket1 - basket2;
   console.log(sum);
 }
+basketOfBals(6, 2);
 
-AddTwoNumbers(10, 4);
 
 // Question 10
 
-var learningJs = [];
-
-function array (elearningJs) {
-  console.log(learningJs)
+var messenger = [];
+function carrier(bird) {
+    var type = bird;
+    messenger.push(bird);
+    console.log(messenger.length)
+    console.log(messenger)
 }
-learningJs[0] = "string"
-
-
-
-
-
+carrier("pigeon");
